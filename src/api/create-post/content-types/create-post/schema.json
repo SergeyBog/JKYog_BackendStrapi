@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "create_posts",
+  "info": {
+    "singularName": "create-post",
+    "pluralName": "create-posts",
+    "displayName": "Create-Post"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Blog": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "ShortDescription": {
+      "type": "text"
+    },
+    "imageUrl": {
+      "type": "string"
+    }
+  }
+}
