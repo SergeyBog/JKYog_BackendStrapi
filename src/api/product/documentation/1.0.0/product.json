@@ -1,5 +1,5 @@
 {
-  "/testing2s": {
+  "/products": {
     "get": {
       "responses": {
         "200": {
@@ -7,7 +7,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testing2ListResponse"
+                "$ref": "#/components/schemas/ProductListResponse"
               }
             }
           }
@@ -64,7 +64,7 @@
         }
       },
       "tags": [
-        "Testing2"
+        "Product"
       ],
       "parameters": [
         {
@@ -169,7 +169,7 @@
           }
         }
       ],
-      "operationId": "get/testing2s"
+      "operationId": "get/products"
     },
     "post": {
       "responses": {
@@ -178,7 +178,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testing2Response"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             }
           }
@@ -235,23 +235,23 @@
         }
       },
       "tags": [
-        "Testing2"
+        "Product"
       ],
       "parameters": [],
-      "operationId": "post/testing2s",
+      "operationId": "post/products",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/Testing2Request"
+              "$ref": "#/components/schemas/ProductRequest"
             }
           }
         }
       }
     }
   },
-  "/testing2s/{id}": {
+  "/products/{id}": {
     "get": {
       "responses": {
         "200": {
@@ -259,7 +259,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testing2Response"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             }
           }
@@ -316,7 +316,7 @@
         }
       },
       "tags": [
-        "Testing2"
+        "Product"
       ],
       "parameters": [
         {
@@ -330,7 +330,7 @@
           }
         }
       ],
-      "operationId": "get/testing2s/{id}"
+      "operationId": "get/products/{id}"
     },
     "put": {
       "responses": {
@@ -339,7 +339,7 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Testing2Response"
+                "$ref": "#/components/schemas/ProductResponse"
               }
             }
           }
@@ -396,7 +396,7 @@
         }
       },
       "tags": [
-        "Testing2"
+        "Product"
       ],
       "parameters": [
         {
@@ -410,13 +410,13 @@
           }
         }
       ],
-      "operationId": "put/testing2s/{id}",
+      "operationId": "put/products/{id}",
       "requestBody": {
         "required": true,
         "content": {
           "application/json": {
             "schema": {
-              "$ref": "#/components/schemas/Testing2Request"
+              "$ref": "#/components/schemas/ProductRequest"
             }
           }
         }
@@ -487,7 +487,7 @@
         }
       },
       "tags": [
-        "Testing2"
+        "Product"
       ],
       "parameters": [
         {
@@ -501,7 +501,7 @@
           }
         }
       ],
-      "operationId": "delete/testing2s/{id}"
+      "operationId": "delete/products/{id}"
     }
   }
 }
