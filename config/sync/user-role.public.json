@@ -1,0 +1,46 @@
+{
+  "name": "Public",
+  "description": "Default role given to unauthenticated user.",
+  "type": "public",
+  "permissions": [
+    {
+      "action": "api::carousel.carousel.find"
+    },
+    {
+      "action": "api::carousel.carousel.findOne"
+    },
+    {
+      "action": "api::jkyogproduct.jkyogproduct.find"
+    },
+    {
+      "action": "api::jkyogproduct.jkyogproduct.findOne"
+    },
+    {
+      "action": "plugin::import-export-entries.export.exportData"
+    },
+    {
+      "action": "plugin::import-export-entries.import.importData"
+    },
+    {
+      "action": "plugin::users-permissions.auth.callback"
+    },
+    {
+      "action": "plugin::users-permissions.auth.connect"
+    },
+    {
+      "action": "plugin::users-permissions.auth.emailConfirmation"
+    },
+    {
+      "action": "plugin::users-permissions.auth.forgotPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.register"
+    },
+    {
+      "action": "plugin::users-permissions.auth.resetPassword"
+    },
+    {
+      "action": "plugin::users-permissions.auth.sendEmailConfirmation"
+    }
+  ]
+}
