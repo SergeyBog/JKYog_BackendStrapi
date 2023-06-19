@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_products",
+  "info": {
+    "singularName": "event-product",
+    "pluralName": "event-products",
+    "displayName": "event-product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "value": {
+      "type": "boolean"
+    }
+  }
+}
