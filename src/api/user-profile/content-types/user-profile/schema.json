@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_profiles",
+  "info": {
+    "singularName": "user-profile",
+    "pluralName": "user-profiles",
+    "displayName": "user-profile"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "username": {
+      "type": "string"
+    },
+    "useremail": {
+      "type": "email"
+    },
+    "userdescription": {
+      "type": "richtext"
+    },
+    "userpassword": {
+      "type": "password"
+    },
+    "usermobilenumber": {
+      "type": "biginteger"
+    },
+    "profilepic": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}
