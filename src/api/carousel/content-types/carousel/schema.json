@@ -4,7 +4,8 @@
   "info": {
     "singularName": "carousel",
     "pluralName": "carousels",
-    "displayName": "carousel"
+    "displayName": "carousel",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -16,19 +17,30 @@
       "required": true
     },
     "avatar": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
       "allowedTypes": [
         "images",
         "files",
         "audios",
         "videos"
-      ],
-      "type": "media",
-      "multiple": false,
-      "required": true
+      ]
     },
     "description": {
       "type": "richtext",
       "required": true
+    },
+    "BannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "lusbjassa": {
+      "type": "string"
     }
   }
 }

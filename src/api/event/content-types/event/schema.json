@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "event"
+    "displayName": "event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -14,6 +15,97 @@
     "title": {
       "type": "string",
       "required": true
+    },
+    "EventCategories": {
+      "type": "enumeration",
+      "enum": [
+        "Programs",
+        "Retreat",
+        "Workshop"
+      ]
+    },
+    "EventType": {
+      "type": "enumeration",
+      "enum": [
+        "Online",
+        "Sankriti"
+      ]
+    },
+    "BannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "FeaturedImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ListPageImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ShortDescription": {
+      "type": "text"
+    },
+    "Body": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "Timezone": {
+      "type": "enumeration",
+      "enum": [
+        "HAST",
+        "AKST",
+        "PST",
+        "MST",
+        "CST",
+        "EST",
+        "IST",
+        "NPT",
+        "UAE",
+        "SGT"
+      ]
+    },
+    "EventStartDateandTime": {
+      "type": "datetime"
+    },
+    "EventEndDateandTime": {
+      "type": "datetime"
+    },
+    "EventLocationDetails": {
+      "type": "string"
+    },
+    "EventOrganizerDetail": {
+      "type": "string"
+    },
+    "CoordinatorName": {
+      "type": "string"
+    },
+    "LearnMoreUrl": {
+      "type": "string"
     }
   }
 }
