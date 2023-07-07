@@ -154,14 +154,36 @@
       "type": "string"
     },
     "events_caraousel": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
+    },
+    "register_url": {
+      "type": "string"
+    },
+    "event_facebook_page_url": {
+      "type": "string"
+    },
+    "whatsapp_text": {
+      "type": "string"
+    },
+    "whatsup_group_id": {
+      "type": "string"
+    },
+    "registration_close_date": {
+      "type": "date"
+    },
+    "registration_closed_message": {
+      "type": "string"
+    },
+    "map_address": {
+      "type": "text"
     }
   }
 }

@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-07-07T07:11:32.062Z"
+    "x-generation-date": "2023-07-07T10:36:26.486Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1587,6 +1587,28 @@
                   ],
                   "example": "string or id"
                 }
+              },
+              "register_url": {
+                "type": "string"
+              },
+              "event_facebook_page_url": {
+                "type": "string"
+              },
+              "whatsapp_text": {
+                "type": "string"
+              },
+              "whatsup_group_id": {
+                "type": "string"
+              },
+              "registration_close_date": {
+                "type": "string",
+                "format": "date"
+              },
+              "registration_closed_message": {
+                "type": "string"
+              },
+              "map_address": {
+                "type": "string"
               }
             }
           }
@@ -2785,6 +2807,28 @@
                 }
               }
             }
+          },
+          "register_url": {
+            "type": "string"
+          },
+          "event_facebook_page_url": {
+            "type": "string"
+          },
+          "whatsapp_text": {
+            "type": "string"
+          },
+          "whatsup_group_id": {
+            "type": "string"
+          },
+          "registration_close_date": {
+            "type": "string",
+            "format": "date"
+          },
+          "registration_closed_message": {
+            "type": "string"
+          },
+          "map_address": {
+            "type": "string"
           },
           "createdAt": {
             "type": "string",
