@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "2023-07-06T05:58:40.849Z"
+    "x-generation-date": "2023-07-07T06:26:00.881Z"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -1443,7 +1443,7 @@
               "title": {
                 "type": "string"
               },
-              "EventCategories": {
+              "event_categories": {
                 "type": "string",
                 "enum": [
                   "Programs",
@@ -1451,14 +1451,15 @@
                   "Workshop"
                 ]
               },
-              "EventType": {
+              "event_type": {
                 "type": "string",
                 "enum": [
                   "Online",
-                  "Sankriti"
+                  "None",
+                  "Sanskriti"
                 ]
               },
-              "BannerImage": {
+              "banner_image": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -1469,7 +1470,7 @@
                 ],
                 "example": "string or id"
               },
-              "FeaturedImage": {
+              "featured_image": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -1480,7 +1481,7 @@
                 ],
                 "example": "string or id"
               },
-              "ListPageImage": {
+              "list_page_image": {
                 "oneOf": [
                   {
                     "type": "integer"
@@ -1491,13 +1492,13 @@
                 ],
                 "example": "string or id"
               },
-              "ShortDescription": {
+              "short_Description": {
                 "type": "string"
               },
               "Body": {
                 "type": "string"
               },
-              "Timezone": {
+              "timezone": {
                 "type": "string",
                 "enum": [
                   "HAST",
@@ -1512,25 +1513,80 @@
                   "SGT"
                 ]
               },
-              "EventStartDateandTime": {
+              "event_start_date_and_time": {
                 "type": "string",
                 "format": "date-time"
               },
-              "EventEndDateandTime": {
+              "event_end_date_and_time": {
                 "type": "string",
                 "format": "date-time"
               },
-              "EventLocationDetails": {
+              "event_location_details": {
                 "type": "string"
               },
-              "EventOrganizerDetail": {
+              "event_organizer_detail": {
                 "type": "string"
               },
-              "CoordinatorName": {
+              "coordinator_name": {
                 "type": "string"
               },
-              "LearnMoreUrl": {
+              "learn_more_url": {
                 "type": "string"
+              },
+              "banner_image_link": {
+                "type": "string"
+              },
+              "banner_image_target": {
+                "type": "string",
+                "enum": [
+                  "New Tab"
+                ]
+              },
+              "featured_image_alternative_text": {
+                "type": "string"
+              },
+              "list_page_image_alternative_text": {
+                "type": "string"
+              },
+              "recurrence": {
+                "type": "string",
+                "enum": [
+                  "None",
+                  "Daily",
+                  "Weekly",
+                  "Monthly",
+                  "Yearly",
+                  "Custom"
+                ]
+              },
+              "recurring_event_time": {
+                "type": "string"
+              },
+              "event_cost": {
+                "type": "string"
+              },
+              "event_tags": {
+                "type": "string"
+              },
+              "cost_description": {
+                "type": "string"
+              },
+              "event_video_youtube_url": {
+                "type": "string"
+              },
+              "events_caraousel": {
+                "type": "array",
+                "items": {
+                  "oneOf": [
+                    {
+                      "type": "integer"
+                    },
+                    {
+                      "type": "string"
+                    }
+                  ],
+                  "example": "string or id"
+                }
               }
             }
           }
@@ -1591,7 +1647,7 @@
           "title": {
             "type": "string"
           },
-          "EventCategories": {
+          "event_categories": {
             "type": "string",
             "enum": [
               "Programs",
@@ -1599,14 +1655,15 @@
               "Workshop"
             ]
           },
-          "EventType": {
+          "event_type": {
             "type": "string",
             "enum": [
               "Online",
-              "Sankriti"
+              "None",
+              "Sanskriti"
             ]
           },
-          "BannerImage": {
+          "banner_image": {
             "type": "object",
             "properties": {
               "data": {
@@ -2227,7 +2284,7 @@
               }
             }
           },
-          "FeaturedImage": {
+          "featured_image": {
             "type": "object",
             "properties": {
               "data": {
@@ -2366,7 +2423,7 @@
               }
             }
           },
-          "ListPageImage": {
+          "list_page_image": {
             "type": "object",
             "properties": {
               "data": {
@@ -2505,13 +2562,13 @@
               }
             }
           },
-          "ShortDescription": {
+          "short_Description": {
             "type": "string"
           },
           "Body": {
             "type": "string"
           },
-          "Timezone": {
+          "timezone": {
             "type": "string",
             "enum": [
               "HAST",
@@ -2526,25 +2583,208 @@
               "SGT"
             ]
           },
-          "EventStartDateandTime": {
+          "event_start_date_and_time": {
             "type": "string",
             "format": "date-time"
           },
-          "EventEndDateandTime": {
+          "event_end_date_and_time": {
             "type": "string",
             "format": "date-time"
           },
-          "EventLocationDetails": {
+          "event_location_details": {
             "type": "string"
           },
-          "EventOrganizerDetail": {
+          "event_organizer_detail": {
             "type": "string"
           },
-          "CoordinatorName": {
+          "coordinator_name": {
             "type": "string"
           },
-          "LearnMoreUrl": {
+          "learn_more_url": {
             "type": "string"
+          },
+          "banner_image_link": {
+            "type": "string"
+          },
+          "banner_image_target": {
+            "type": "string",
+            "enum": [
+              "New Tab"
+            ]
+          },
+          "featured_image_alternative_text": {
+            "type": "string"
+          },
+          "list_page_image_alternative_text": {
+            "type": "string"
+          },
+          "recurrence": {
+            "type": "string",
+            "enum": [
+              "None",
+              "Daily",
+              "Weekly",
+              "Monthly",
+              "Yearly",
+              "Custom"
+            ]
+          },
+          "recurring_event_time": {
+            "type": "string"
+          },
+          "event_cost": {
+            "type": "string"
+          },
+          "event_tags": {
+            "type": "string"
+          },
+          "cost_description": {
+            "type": "string"
+          },
+          "event_video_youtube_url": {
+            "type": "string"
+          },
+          "events_caraousel": {
+            "type": "object",
+            "properties": {
+              "data": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "id": {
+                      "type": "number"
+                    },
+                    "attributes": {
+                      "type": "object",
+                      "properties": {
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {},
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number",
+                          "format": "float"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {},
+                        "related": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "array",
+                              "items": {
+                                "type": "object",
+                                "properties": {
+                                  "id": {
+                                    "type": "number"
+                                  },
+                                  "attributes": {
+                                    "type": "object",
+                                    "properties": {}
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "folder": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "folderPath": {
+                          "type": "string"
+                        },
+                        "createdAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "updatedAt": {
+                          "type": "string",
+                          "format": "date-time"
+                        },
+                        "createdBy": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "updatedBy": {
+                          "type": "object",
+                          "properties": {
+                            "data": {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "number"
+                                },
+                                "attributes": {
+                                  "type": "object",
+                                  "properties": {}
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           },
           "createdAt": {
             "type": "string",

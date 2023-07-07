@@ -16,7 +16,7 @@
       "type": "string",
       "required": true
     },
-    "EventCategories": {
+    "event_categories": {
       "type": "enumeration",
       "enum": [
         "Programs",
@@ -24,14 +24,15 @@
         "Workshop"
       ]
     },
-    "EventType": {
+    "event_type": {
       "type": "enumeration",
       "enum": [
         "Online",
-        "Sankriti"
+        "None",
+        "Sanskriti"
       ]
     },
-    "BannerImage": {
+    "banner_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -42,7 +43,7 @@
         "audios"
       ]
     },
-    "FeaturedImage": {
+    "featured_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -53,7 +54,7 @@
         "audios"
       ]
     },
-    "ListPageImage": {
+    "list_page_image": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -64,7 +65,7 @@
         "audios"
       ]
     },
-    "ShortDescription": {
+    "short_Description": {
       "type": "text"
     },
     "Body": {
@@ -74,7 +75,7 @@
       },
       "customField": "plugin::ckeditor5.CKEditor"
     },
-    "Timezone": {
+    "timezone": {
       "type": "enumeration",
       "enum": [
         "HAST",
@@ -89,23 +90,78 @@
         "SGT"
       ]
     },
-    "EventStartDateandTime": {
+    "event_start_date_and_time": {
       "type": "datetime"
     },
-    "EventEndDateandTime": {
+    "event_end_date_and_time": {
       "type": "datetime"
     },
-    "EventLocationDetails": {
+    "event_location_details": {
       "type": "string"
     },
-    "EventOrganizerDetail": {
+    "event_organizer_detail": {
       "type": "string"
     },
-    "CoordinatorName": {
+    "coordinator_name": {
       "type": "string"
     },
-    "LearnMoreUrl": {
+    "learn_more_url": {
       "type": "string"
+    },
+    "banner_image_link": {
+      "type": "string"
+    },
+    "banner_image_target": {
+      "type": "enumeration",
+      "enum": [
+        "New Tab"
+      ]
+    },
+    "featured_image_alternative_text": {
+      "type": "string"
+    },
+    "list_page_image_alternative_text": {
+      "type": "string"
+    },
+    "recurrence": {
+      "type": "enumeration",
+      "enum": [
+        "None",
+        "Daily",
+        "Weekly",
+        "Monthly",
+        "Yearly",
+        "Custom"
+      ]
+    },
+    "recurring_event_time": {
+      "type": "string"
+    },
+    "event_cost": {
+      "type": "string"
+    },
+    "event_tags": {
+      "type": "string"
+    },
+    "cost_description": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    },
+    "event_video_youtube_url": {
+      "type": "string"
+    },
+    "events_caraousel": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
