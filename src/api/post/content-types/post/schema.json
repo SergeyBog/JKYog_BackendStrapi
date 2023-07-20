@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "posts",
+  "info": {
+    "singularName": "post",
+    "pluralName": "posts",
+    "displayName": "Post",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "ShortDescription": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "VideoID": {
+      "type": "uid"
+    },
+    "PublishedDate": {
+      "type": "date"
+    },
+    "ImageLink": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "#TransformYourLife",
+        "Bal Mukund",
+        "Happiness Challenge",
+        "Program Updates",
+        "Wellness For Life",
+        "Videos"
+      ]
+    },
+    "TextFormat": {
+      "type": "enumeration",
+      "enum": [
+        "Basic HTML",
+        "Restricted HTML",
+        "Full HTML"
+      ]
+    },
+    "BLOG": {
+      "type": "customField",
+      "options": {
+        "preset": "toolbar"
+      },
+      "customField": "plugin::ckeditor5.CKEditor"
+    }
+  }
+}
