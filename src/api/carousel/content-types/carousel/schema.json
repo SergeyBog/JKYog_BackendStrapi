@@ -30,17 +30,6 @@
     "description": {
       "type": "richtext",
       "required": true
-    },
-    "BannerImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "lusbjassa": {
-      "type": "string"
     }
   }
 }
