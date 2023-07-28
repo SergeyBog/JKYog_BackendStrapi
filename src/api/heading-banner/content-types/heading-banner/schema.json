@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "carousels",
+  "collectionName": "heading_banners",
   "info": {
-    "singularName": "carousel",
-    "pluralName": "carousels",
-    "displayName": "carousel",
+    "singularName": "heading-banner",
+    "pluralName": "heading-banners",
+    "displayName": "HeadingBanner",
     "description": ""
   },
   "options": {
@@ -12,16 +12,19 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "avatar": {
+    "bannerimage": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
-        "audios",
-        "videos"
+        "videos",
+        "audios"
       ]
+    },
+    "banner_url": {
+      "type": "string"
     }
   }
 }
