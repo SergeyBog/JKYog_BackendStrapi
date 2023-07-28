@@ -28,3 +28,21 @@ module.exports = ({ env }) => ({
     enabled: true,
   },
 });
+
+module.exports = {
+  // ...
+  'custom-ckeditor': {
+    enabled: true,
+    resolve: './src/plugins/custom-ckeditor'
+  },
+  // ...
+}
+
+module.exports = {
+  // ...
+  'import-from-word': {
+    enabled: true,
+    resolve: './src/plugins/import-from-word'
+  },
+  // ...
+}

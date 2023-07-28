@@ -10,13 +10,14 @@
     "strapi": "strapi"
   },
   "dependencies": {
-    "@_sh/strapi-plugin-ckeditor": "^2.0.4",
+    "@ckeditor/ckeditor5-import-word": "^38.1.1",
     "@ckeditor/ckeditor5-markdown-gfm": "^38.0.1",
     "@ckeditor/strapi-plugin-ckeditor": "^0.0.7",
     "@strapi/plugin-i18n": "4.10.6",
     "@strapi/plugin-users-permissions": "4.10.6",
     "@strapi/provider-upload-aws-s3": "^4.10.6",
     "@strapi/strapi": "4.10.6",
+    "ckeditor5-custom-build": "file:ckeditor",
     "pg": "^8.8.0",
     "strapi-plugin-config-sync": "^1.1.2",
     "strapi-plugin-import-export-content": "^0.4.2",
