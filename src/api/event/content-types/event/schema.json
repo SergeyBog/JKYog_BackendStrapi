@@ -73,7 +73,7 @@
       "options": {
         "preset": "toolbar"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "timezone": {
       "type": "enumeration",
@@ -148,7 +148,7 @@
       "options": {
         "preset": "toolbar"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "event_video_youtube_url": {
       "type": "string"
@@ -205,14 +205,14 @@
       "options": {
         "preset": "toolbar"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor"
     },
     "event_bottom_section": {
       "type": "customField",
       "options": {
         "preset": "toolbar"
       },
-      "customField": "plugin::ckeditor5.CKEditor"
+      "customField": "plugin::ckeditor.CKEditor"
     }
   }
 }

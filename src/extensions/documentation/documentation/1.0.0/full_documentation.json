@@ -1033,9 +1033,7 @@
               "Title": {
                 "type": "string"
               },
-              "Blog": {
-                "type": "string"
-              },
+
               "ShortDescription": {
                 "type": "string"
               },
@@ -1098,9 +1096,7 @@
           "Title": {
             "type": "string"
           },
-          "Blog": {
-            "type": "string"
-          },
+      
           "ShortDescription": {
             "type": "string"
           },
