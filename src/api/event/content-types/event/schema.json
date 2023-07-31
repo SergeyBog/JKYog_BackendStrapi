@@ -71,7 +71,8 @@
     "Body": {
       "type": "customField",
       "options": {
-        "preset": "toolbar"
+        "preset": "rich",
+        "output": "HTML"
       },
       "customField": "plugin::ckeditor.CKEditor"
     },
@@ -146,7 +147,8 @@
     "cost_description": {
       "type": "customField",
       "options": {
-        "preset": "toolbar"
+        "preset": "rich",
+        "output": "HTML"
       },
       "customField": "plugin::ckeditor.CKEditor"
     },
@@ -203,14 +205,16 @@
     "event_description_section": {
       "type": "customField",
       "options": {
-        "preset": "toolbar"
+        "preset": "rich",
+        "output": "HTML"
       },
       "customField": "plugin::ckeditor.CKEditor"
     },
     "event_bottom_section": {
       "type": "customField",
       "options": {
-        "preset": "toolbar"
+        "preset": "rich",
+        "output": "HTML"
       },
       "customField": "plugin::ckeditor.CKEditor"
     }
