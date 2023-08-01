@@ -12,16 +12,18 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
+    "youtube_thumbnail": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     },
-    "youtube_url": {
-      "type": "customField",
-      "options": {
-        "preset": "rich",
-        "output": "HTML"
-      },
-      "customField": "plugin::ckeditor.CKEditor"
+    "youtube_id": {
+      "type": "string"
     }
   }
 }
