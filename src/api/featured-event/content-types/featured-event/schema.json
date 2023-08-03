@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "featured_events",
+  "info": {
+    "singularName": "featured-event",
+    "pluralName": "featured-events",
+    "displayName": "featuredEvent"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "featured_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "start_date": {
+      "type": "date"
+    },
+    "end_date": {
+      "type": "date"
+    },
+    "featured_url": {
+      "type": "string"
+    }
+  }
+}
