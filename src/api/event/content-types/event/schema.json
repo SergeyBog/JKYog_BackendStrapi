@@ -217,6 +217,9 @@
         "output": "HTML"
       },
       "customField": "plugin::ckeditor.CKEditor"
+    },
+    "address_field": {
+      "type": "string"
     }
   }
 }
